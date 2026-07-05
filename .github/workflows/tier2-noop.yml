@@ -1,0 +1,8 @@
+name: tier2-noop
+# Tier-2 harness fixture — a manual-dispatch no-op so trigger_ci has something to run.
+on: workflow_dispatch
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "tier2 noop"
